@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-transform: uppercase;
+}
+
+#header .logo {
+    width: 20%;
+    color: #3cb878;
+    margin-left: 70px;
+    font-size: 20px;
+    line-height: 100px;
+}
+
+#header ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    /* margin-left: 50px; */
+    font-size: 20px;
+    line-height: 100px;
+    align-items: center;
+}
+
+#header ul li {
+    /* margin-left: 50px; */
+    line-height: 100px;
+}
+
+#header ul li :first-child(){
+    color: #3cb878;
+}
+
+#header ul li a {
+    text-decoration: none;
+
+}
+
+#header ul li a:hover {
+    color: #3cb878;
+}
+
+#header .icon {
+    width: 20%;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header .icon i {
+    margin: 0px 10px;
+    line-height: 100px;
+}
+
+#header .icon i:hover {
+    cursor: pointer;
+}
+
+#banner {
+    width: 100%;
+    height: 804px;
+    background-image: url(img/banner.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner .text {
+    width: 30%;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 335px 243px;
+}
+
+#banner .text h3 {
+    margin-bottom: 30px;
+}
+
+#banner .text-d {
+    color: #3cb878;
+}
+
+#best-seller {
+    /* margin-top: 100px; */
+    height: 615px;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+
+}
+
+#best-seller .item {
+    width: calc((100% / 5) - 10px);
+    margin: 10px;
+    position: relative;
+}
+
+#best-seller .item img {
+    width: 100%;
+}
+
+#best-seller .bsl-text {
+    display: flex;
+    align-items: center;
+}
+
+.bsl-text h3 {
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bsl-text i {
+    color: #3cb878;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.bsl-text p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#best-seller .logo-buy {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#best-seller .logo-buy ul li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    background-color: #3cb878;
+
+}
+
+#best-seller .logo-buy ul li:hover {
+    cursor: pointer;
+}
+
+#best-seller .item p.price {
+    color: #3cb878;
+    margin-top: 10px;
+}
