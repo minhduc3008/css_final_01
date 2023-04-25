@@ -108,10 +108,10 @@ header .sidebar-top a:nth-child(1) span {
 
 .slider-item h2 {
     position: absolute;
-    /* top: 40%;
+    top: 40%;
     left: 15%;
     color: #333;
-    font-size: 2rem; */
+    font-size: 2rem;
 }
 
 #slider img {
