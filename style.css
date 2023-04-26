@@ -198,3 +198,38 @@ ul.product-list li .buy i {
     text-align: center;
     line-height: 20px;
 }
+
+/* Shippng */
+
+#shipping {
+    width: 100%;
+    margin-top: 60px;
+    padding: 50px 0px;
+    background-color: #f5f6f9;
+}
+
+#shipping ul {
+    display: flex;
+
+}
+
+#shipping ul li {
+    width: 25%;
+    text-align: center;
+}
+
+#shipping ul li img {
+    width: 32px;
+    height: 32px;
+}
+
+#shipping ul li h2 {
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#shipping ul li small {
+    color: #ccc;
+}
+
