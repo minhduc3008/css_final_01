@@ -233,3 +233,21 @@ ul.product-list li .buy i {
     color: #ccc;
 }
 
+/* Promotion */
+
+#promotion {
+    background-color: #2e3348;
+}
+
+#promotion ul {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+#promotion ul li {
+    width: 33%;
+    padding: 100px 0px;
+    margin: 0px 15px;
+}
+
