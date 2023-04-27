@@ -268,6 +268,7 @@ ul.product-list li .buy i {
 #feature-product {
     width: 100%;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 #feature-product h2 {
@@ -282,7 +283,132 @@ ul.product-list li .buy i {
     margin: 10px 0px 30px 0px;
 }
 
-/* #feature-product .product-list {
+/* Discount and Brands */
+
+#brands {
     display: flex;
-    flex-wrap: wrap;
-} */
+    width: 100%;
+}
+
+.discount, .brands {
+    width: 50%;
+    height: 250px;
+}
+
+#brands .discount {
+    background: #2e3142 url(img/bgform.jpg) no-repeat;
+    text-align: center;
+    background-size: cover;
+}
+
+#brands .discount div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#brands .discount div.text h2 {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#brands .discount div.text p {
+    min-width: 400px;
+    color: #fff;
+    line-height: 25px;
+    font-size: .8rem;
+    margin-bottom: 30px;
+}
+
+#brands .discount form input {
+    width: 300px;
+    padding: 5px;
+}
+
+#brands .discount form button {
+    background-color: #3cb878;
+    border: none;
+    color: #fff;
+    padding: 6px;
+}
+
+#brands .brands {
+    background-color: #f5f6f9;
+}
+
+#brands .brands ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 250px;
+    justify-content: space-around;
+}
+
+#brands .brands ul li a {
+    display: block;
+    height: 120px;
+    width: 130px;
+    background: url(img/brand.png);
+}
+
+#brands .brands ul li.brand-2 a {
+    background-position: -235px 0px;
+}
+
+#brands .brands ul li.brand-3 a {
+    background-position: 360px 0;
+}
+
+#brands .brands ul li.brand-4 a {
+    background-position: 128px 0;
+}
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    color: #ccc;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.f-left, .f-right {
+    width: 50%;
+}
+
+#footer .f-right ul {
+    display: flex;
+    max-width: 300px;
+    align-items: center;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#footer .f-right ul li a {
+    display: block;
+    height: 30px;
+    width: 50px;
+    background: url(img/payment.png) no-repeat;
+}
+
+#footer .f-right ul li:nth-child(2) a {
+    background-position: -60px 0px;
+}
+
+#footer .f-right ul li:nth-child(3) a {
+    background-position: -120px 0px;
+}
+
+#footer .f-right ul li:nth-child(4) a {
+    background-position: -180px 0px;
+}
+
+#footer .f-right ul li:nth-child(5) a {
+    background-position: -240px 0px;
+}
