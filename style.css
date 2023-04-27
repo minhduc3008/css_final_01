@@ -99,14 +99,14 @@ header .sidebar-top a:nth-child(1) span {
 
 #slider {
     width: 100%;
-    height: 560px;
+    /* height: 560px; */
 }
 
 .slider-item {
     position: relative;
 }
 
-#slider h2 {
+.slider-item h2 {
     position: absolute;
     top: 40%;
     left: 15%;
@@ -116,12 +116,12 @@ header .sidebar-top a:nth-child(1) span {
     letter-spacing: 8px;
 }
 
-#slider h2 small {
+.slider-item h2 small {
     display: block;
     color: #3cb878;
 }
 
-#slider img {
+.slider-item img {
     max-width: 100%;
     /* max-height: 100%; */
     width: 100%;
@@ -132,7 +132,7 @@ header .sidebar-top a:nth-child(1) span {
 
 #best-seller {
     width: 100%;
-    margin-top: 160px;
+    margin-top: 60px;
     display: block;
 }
 
@@ -181,19 +181,25 @@ ul.product-list li.intro p {
     max-width: 200px;
 }
 
-ul.product-list li.best-prod {
+ul.product-list li {
     position: relative;
 }
-ul.product-list li .buy {
+
+ul.product-list li:hover div.buy  {
+    display: flex;
+}
+
+ul.product-list li div.buy {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 0px;
     right: 0px;
     margin: 5px;
+    display: none;
 }
 
-ul.product-list li .buy i {
+ul.product-list li div.buy i {
     padding: 5px;
     margin-top: 5px;
     width: 30px;
@@ -411,4 +417,142 @@ ul.product-list li .buy i {
 
 #footer .f-right ul li:nth-child(5) a {
     background-position: -240px 0px;
+}
+
+/* Responsive Mobile*/
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 996px) {
+    
+}
+
+@media only screen and (max-width: 376px) {
+    .menu {
+        display: none;
+    }
+
+    header .logo {
+        width: 75%;
+    }
+
+    header .sidebar-top {
+        width: 25%;
+    }
+
+    header .logo a {
+        display: block;
+        text-indent: 15px;
+    }
+
+    #slider, .slider-item {
+        height: auto;
+    }
+
+    #slider h2 {
+        top: 40%;
+        left: 10%;
+        font-size: .8rem;
+        letter-spacing: 2px;
+    }
+
+    #best-seller {
+        margin-top: 15px;
+    }
+
+    ul.product-list li {
+        width: calc((100% / 2) - 10px);
+        margin: 0px 5px;
+    }
+    
+    
+    ul.product-list li.intro {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+
+    ul.product-list li.intro p {
+        max-width: 257px;
+        text-align: center;
+    }
+
+    #shipping {
+        margin-top: 15px;
+    }
+
+    #shipping ul {
+        flex-wrap: wrap;
+    }
+
+    #shipping ul li {
+        width: calc((100%/2) - 30px);
+        margin: 15px;
+    }
+
+    #promotion ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #promotion ul li {
+       width: 100%;
+    }
+
+    #brands {
+        flex-direction: column;
+
+    }
+    
+    .discount, .brands {
+        width: 100%;
+        height: 250px;
+    }
+
+    #brands .discount div.text p {
+        min-width: 350px;
+        margin-bottom: 10px;
+    }
+
+    #brands .discount form button {
+        margin-top: 15px;
+    }
+
+    #brands .brands ul {
+        flex-wrap: wrap;
+        margin: 15px 0px;
+    }
+
+    #brands .brands ul li a {
+        /* width: calc((100/)); */
+    }
+
+    #footer {
+        display: block;
+        margin-top: 30px;
+        height: 60px;
+    }
+
+    .f-left, .f-right {
+        width: 100%;
+    }
+
+    #footer .f-right ul {
+        display: flex;
+        max-width: 230px;
+        align-items: center;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    ul.product-list li:hover div.buy  {
+        display: flex;
+    }
+
+    ul.product-list li div.buy {
+        display: none;
+    }
 }
