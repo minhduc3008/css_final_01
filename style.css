@@ -426,10 +426,109 @@ ul.product-list li div.buy i {
 }
 
 @media only screen and (max-width: 996px) {
+    .menu {
+        display: none;
+    }
+
+    header .logo {
+        width: 75%;
+    }
+
+    header .sidebar-top {
+        width: 25%;
+    }
+
+    header .logo a {
+        display: block;
+        text-indent: 150px;
+    }
+
+    #slider, .slider-item {
+        height: auto;
+    }
+
+    #slider h2 {
+        top: 30%;
+        left: 10%;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    #best-seller {
+        margin-top: 15px;
+    }
+
+    ul.product-list li {
+        width: calc((100% / 4) - 10px);
+        margin: 0px 5px;
+    }
     
+    
+    ul.product-list li.intro {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+
+    ul.product-list li.intro p {
+        max-width: 257px;
+        text-align: center;
+    }
+
+    #brands {
+        flex-direction: column;
+
+    }
+    
+    .discount, .brands {
+        width: 100%;
+        height: 250px;
+    }
+
+    #brands .discount div.text p {
+        min-width: 350px;
+        margin-bottom: 10px;
+    }
+
+    #brands .discount form button {
+        margin-top: 15px;
+    }
+
+    #brands .brands ul {
+        flex-wrap: wrap;
+        margin: 15px 0px;
+    }
+
+
+    #footer {
+        display: block;
+        margin-top: 30px;
+        height: 60px;
+    }
+
+    .f-left, .f-right {
+        width: 100%;
+    }
+
+    #footer .f-right ul {
+        display: flex;
+        max-width: 230px;
+        align-items: center;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    ul.product-list li:hover div.buy  {
+        display: flex;
+    }
+
+    ul.product-list li div.buy {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 768px) {
     .menu {
         display: none;
     }
@@ -526,9 +625,6 @@ ul.product-list li div.buy i {
         margin: 15px 0px;
     }
 
-    #brands .brands ul li a {
-        /* width: calc((100/)); */
-    }
 
     #footer {
         display: block;
